@@ -1,0 +1,3 @@
+SELECT Directory_of_intangible_assets.name, Registration_card_of_intangible_assets.name
+FROM Directory_of_intangible_assets INNER JOIN Registration_card_of_intangible_assets
+ON Directory_of_intangible_assets.view_code = Registration_card_of_intangible_assets.view_code

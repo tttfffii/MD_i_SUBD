@@ -1,0 +1,2 @@
+SELECT responsible_person_code, full_name
+FROM Directory_of_responsible_people ORDER BY responsible_person_code DESC

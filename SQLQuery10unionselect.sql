@@ -1,0 +1,3 @@
+SELECT name
+FROM Directory_of_intangible_assets
+UNION SELECT name FROM Registration_card_of_intangible_assets

@@ -1,0 +1,6 @@
+CREATE VIEW Inventor_and_his_invention AS
+SELECT Registration_card_of_intangible_assets.commissioning_date AS Invention_date,
+       Directory_of_responsible_people.full_name AS Inventor,
+	   Directory_of_intangible_assets.name AS Type_of_document
+FROM Registration_card_of_intangible_assets INNER JOIN Directory_of_intangible_assets ON Registration_card_of_intangible_assets.view_code = Directory_of_intangible_assets.view_code
+INNER JOIN Directory_of_responsible_people ON Registration_card_of_intangible_assets.responsible_person_code = Directory_of_responsible_people.responsible_person_code
